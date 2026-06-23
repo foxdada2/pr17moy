@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: sans-serif; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px; 
+}
+
+.nav a {
+  text-decoration: none; 
+  font-size: 16px;
+  transition: color 0.3s;
+  color: black;
+}
+
+.nav a.active, .nav a:hover {
+  font-weight: bold;
+}
+
+.hero {
+  height: 40vh;
+  background:url('img/1.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.hero h1, p{
+  position:relative;
+  bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.description {
+  padding: 40px 24px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.description h2 {
+  margin-bottom: 16px;
+}
+
+.latest-projects {
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.latest-projects h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-placeholder {
+  background:url('img/11.webp');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 16px;
+}
+.card-placeholder p, h3{
+  margin-bottom: 16px;
+}
+.card-placeholder1 {
+  background:url('img/111.webp');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 16px;
+}
+.card-placeholder1 p, h3{
+  margin-bottom: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
